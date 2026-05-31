@@ -290,6 +290,9 @@ const PRAYER_CATEGORIES = [
   { id: "deceased", emoji: "🕯️", title: "Za zosnulých" },
   { id: "exam", emoji: "📚", title: "Pred skúškou" },
   { id: "interview", emoji: "🤝", title: "Pred pohovorom" },
+  { id: "protection", emoji: "🛡️", title: "Ochrana" },
+  { id: "finances", emoji: "💰", title: "Financie" },
+  { id: "nature", emoji: "🌿", title: "Príroda" },
   { id: "rosary_intro", emoji: "📿", title: "Ružienec — postup" },
   { id: "rosary_joyful", emoji: "🌹", title: "Radostný" },
   { id: "rosary_sorrowful", emoji: "😔", title: "Bolestný" },
@@ -382,6 +385,26 @@ const PRAYERS = {
     { title: "💼 Pred pracovným pohovorom", text: "Pane Bože, dnes idem na pracovný pohovor a zverujem Ti tento krok.\nTy vieš, čo pre mňa pripravuješ — aká práca je súčasťou Tvojho plánu pre môj život.\nProsím Ťa: daj mi pokoj, jasnosť a sebadôveru. Pomôž mi vyjadriť sa úprimne a zrozumiteľne. Nech ľudia, ktorí ma budú počúvať, vidia to dobré, čo si do mňa vložil.\nAk je toto miesto pre mňa, otvor dvere. Ak nie — veď ma tam, kde mám byť.\nDôverujem Ti, Pane. Amen." },
     { title: "🙏 Krátka modlitba tesne pred vstupom", text: "Pane, som tu. Som Tvoja. Sprevádzaj ma. Amen." },
     { title: "✨ Po pohovore — odovzdanie výsledku", text: "Pane, urobila som, čo som mohla. Zvyšok odovzdávam do Tvojich rúk. Tvoja vôľa nech sa stane. Amen." },
+  ],
+  protection: [
+    { title: "✝️ Modlitba sv. Benedikta", text: "Krížu svätého buď mi svetlom,\nnie drak buď mi vodcom.\nPreč, satan! Neraď mi márnosti.\nZlé veci, čo ponúkaš, sám pi.\n\nKrúžok svätého Benedikta:\nC.S.P.B. — Crux Sancti Patris Benedicti\n(Kríž svätého otca Benedikta)\n\nV.R.S.N.S.M.V. — Vade Retro Satana, Nunquam Suade Mihi Vana\n(Ustúp, satan! Nikdy mi neraď márnosti)\n\nS.M.Q.L.I.V.B. — Sunt Mala Quae Libas, Ipse Venena Bibas\n(Zlé je to, čo ponúkaš — sám pi tie jedy)\n\nPane Ježišu Kriste, skrze zásluh svätého Benedikta,\nprosím Ťa o ochranu pred každým zlom,\npred temnými duchmi, pred závisťou a nenávisťou ľudí,\npred čiernou mágiou a zlými úmyslami.\nObklopte ma, svätí anjeli, a braňte ma na každej ceste.\nAmen." },
+    { title: "⚔️ Modlitba sv. Michala Archanjela", text: "Svätý Michal Archanjel,\nbráň nás v boji,\nbuď nám ochranou proti zlobe a nástrahám diabla.\nNech ho Boh pokarhá, pokorne prosíme,\na ty, knieža nebeského vojska,\nzvrhni satana a ostatných zlých duchov,\nktorí sa na skazu duší potulujú po svete,\ndo pekla, Božou mocou.\nAmen." },
+    { title: "🩸 Modlitba k Predrahej Krvi Ježišovej", text: "Pane Ježišu Kriste,\nzvlažujem sa Tvojou Predrahou Krvou.\nNech ma chráni pred každým zlom —\npred temnotou, pred závisťou, pred nenávisťou,\npred čiernou mágiou a pred každou mocou pekla.\nTvoja Krv nech je ochranou môjho tela, duše i domova.\nNech je zapečatená každá brána, ktorou by mohlo vstúpiť zlo.\nAmen." },
+    { title: "🌹 Zasvätenie sa pod ochranu Panny Márie", text: "Mária, Matka moja,\nodovzdávam sa celá pod tvoju ochranu.\nZakry ma svojím plášťom\na chráň ma pred každým zlom, pred temnotou a pred zlými ľuďmi.\nTy, ktorá si rozšliapala hlavu hada —\npros za mňa a za môj domov.\nNech sa žiadna temná moc nepriblíži k tým, ktorých milujem.\nAmen." },
+    { title: "🛡️ Ochrana domova a rodiny", text: "Pane Ježišu Kriste,\nposvätený Tvojím menom nech je tento domov.\nNech je tu pokoj, nie strach.\nNech je tu láska, nie nenávisť.\nNech sú tu Tvoji anjeli strážni pri každých dverách.\nOdháňam každého temného ducha, každú zlú energiu,\nkaždé zlé oko a každý zlý úmysel —\nv mene Ježiša Krista, ktorý vstal z mŕtvych.\nAmen." },
+    { title: "🙏 Krátka ochranná modlitba na každý deň", text: "Pane, dnes Ti zverujem seba, svoju rodinu a svoj domov.\nObklopte nás, svätí anjeli.\nSv. Benedikt, pros za nás.\nSv. Michal, chráň nás.\nPanna Mária, zakry nás svojím plášťom.\nAmen." },
+  ],
+  finances: [
+    { title: "💰 Modlitba za finančné požehnanie", text: "Pane Bože, Ty si Stvoriteľ všetkého a každý dar pochádza od Teba.\nProsím Ťa o Tvoje požehnanie na mojej práci a na mojich rukách.\nNech je všetko, čo robím, v súlade s Tvojou vôľou.\nOtvor mi dvere k novým príležitostiam a daj mi múdrosť,\naby som nakladala s tým, čo mám, zodpovedne a s vďakou.\nVerím, že sa o mňa postaráš — veď ani o vtáky nebeské sa nestaráš menej.\nAmen." },
+    { title: "🙏 Ochrana financií pred stratou a podvodom", text: "Pane Ježišu Kriste,\nzverujem Ti svoje financie, svoje príjmy a svoj majetok.\nChráň ma pred podvodmi, pred zlými ľuďmi s nekalými úmyslami,\npred nečakanými stratami a pred každou formou okrádania.\nNech je nad mojím domom a nad mojou peňaženkou Tvoja ochrana.\nSvätý Jozef, patrón rodín a pracujúcich, pros za mňa.\nAmen." },
+    { title: "✨ Modlitba v čase finančnej núdze", text: "Pane, je mi ťažko.\nNevidím cestu von a starosti ma tláčia.\nAle Ty si Boh, pre ktorého nie je nič nemožné.\nProsím Ťa — pošli mi pomoc, o ktorej ešte ani neviem.\nOtvor mi oči, aby som videla príležitosti, ktoré prichystávaš.\nDôverujem Ti aj v tejto tme. Amen." },
+    { title: "🌟 Ďakujem za každodenný chlieb", text: "Pane, ďakujem Ti za každý deň, keď mám čo jesť,\nkde spať a koho milovať.\nČasto zabúdam na to, čo mám, a myslím na to, čo nemám.\nOdpusť mi túto nevďačnosť.\nNauč ma vidieť Tvoju ruku v každej malej veci —\nv tanieri jedla, v teplom domove, v zdraví mojich blízkych.\nAmen." },
+  ],
+  nature: [
+    { title: "🌿 Ďakujem za plody zeme", text: "Pane Bože, Stvoriteľ neba i zeme,\nďakujem Ti za každé zrnko, každý kvet, každý plod,\nktorý vyrastie z hliny, ktorú si stvoril.\nZa chlieb na stole, za ovocie zo záhrady,\nza vôňu dažďa a za teplo slnka —\nza všetko Ti ďakujem z celého srdca.\nNauč nás chrániť to, čo si nám zveril.\nAmen." },
+    { title: "🌳 Modlitba za ochranu prírody", text: "Pane, Ty si stvoril tento svet a videl, že je dobrý.\nOdpusť nám, že sme sa o neho nie vždy dobre starali.\nPrebuď v nás úctu k zemi, k vodám, k lesom a k živočíchom.\nNech každý z nás urobí aspoň malý krok —\naby sme zanechali túto krajinu krajšiu pre naše deti.\nAmen." },
+    { title: "🌸 Chvála Bohu za krásu stvorenia", text: "Pane, keď vidím západ slnka,\nkeď počujem spev vtákov alebo šumenie lesa —\ncítim Tvoju prítomnosť.\nSi väčší ako všetko, čo som schopná pochopiť,\na predsa mi dovoľuješ dotknúť sa Teba\ncez krásu sveta, ktorý si stvoril.\nChválim Ťa, Bože môj. Amen." },
+    { title: "🌾 Požehnanie úrody a vďaka za jedlo", text: "Pane Bože, žehnaj polia a záhrady,\nruky tých, čo pracujú v zemi,\na ovocie ich námahy.\nNech niet hladu tam, kde je Tvoja ruka.\nNech každé sústo, ktoré jeme,\nje pre nás pripomienkou Tvojej lásky a starostlivosti.\nAmen." },
   ],
 };
 
