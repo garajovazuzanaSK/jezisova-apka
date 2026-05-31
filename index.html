@@ -563,7 +563,7 @@ function renderHome(el) {
     <div class="grid-card" onclick="switchTab('ask')"><div class="gc-emoji">🙏</div><div class="gc-title">Poraď mi</div><div class="gc-desc">Opíš čo ťa trápi</div></div>
     <div class="grid-card" onclick="switchTab('daily')"><div class="gc-emoji">📖</div><div class="gc-title">Citát dňa</div><div class="gc-desc">Boží verš na dnes</div></div>
     <div class="grid-card" onclick="switchTab('prayer')"><div class="gc-emoji">🕯️</div><div class="gc-title">Modlitby</div><div class="gc-desc">Na každú príležitosť</div></div>
-    <div class="grid-card" onclick="switchTab('bible')"><div class="gc-emoji">📗</div><div class="gc-title">Slovenská Biblia</div><div class="gc-desc">Nový zákon</div></div>
+    <div class="grid-card" onclick="switchTab('bible')"><div class="gc-emoji">📗</div><div class="gc-title">Biblia</div><div class="gc-desc">Nový zákon</div></div>
   </div>`;
 }
 
@@ -675,7 +675,7 @@ function renderBible(el) {
 
   el.innerHTML = `
   <div class="white-box">
-    <h3>📗 Slovenská Biblia — Nový zákon</h3>
+    <h3>📗 Biblia — Nový zákon</h3>
     <p style="font-size:12px;color:#8b6d4a;margin-bottom:12px">„Nádej pre každého" — voľne dostupný preklad</p>
     <div class="bible-controls">
       <select onchange="changeBibleBook(this.value)">${bookOptions}</select>
